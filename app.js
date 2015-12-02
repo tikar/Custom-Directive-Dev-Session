@@ -77,5 +77,5 @@ angular
       //});
 
     $urlRouterProvider.otherwise('/isolate-scope-with-controller');
-
+ 
   });
