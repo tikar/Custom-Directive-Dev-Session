@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" ng-app="directivesModule">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title data-ng-bind="$state.current.data.pageTitle + ' | Magic Chips'">Magic Chips</title>
+
+	<link rel="stylesheet" href="/static/vendors/bootstrap/css/normalize.css" />
+	<link rel="stylesheet" href="/static/vendors/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/static/css/reset.css">
+	<link rel="stylesheet" href="/static/css/app.css">
+	<link rel='stylesheet' href='/static/css/roboto-font-face.css'>
+
+
+	<!-- jQuery static -->
+    <!--<script src="/static/vendors/jquery/jquery-1.11.2.min.js"></script>-->
+
+	<!-- Bootstrap's JavaScript requires jQuery -->
+	<!--<script src="/static/vendors/bootstrap/js/bootstrap.min.js"></script>-->
+</head>
+
+<body ng-click="displayOptions = false">
+	<div ui-view="content" style="margin-bottom:20px;"></div>
+
+	<!-- angular static js-->
+	<script src="/static/vendors/angular/angular.js"></script>
+	<script src="/static/vendors/angular/angular-ui-router.js"></script>
+	<script src="/static/vendors/angular/angular-resource.js"></script>
+	<script src="/static/vendors/angular/checklist-model.js"></script>
+	<script src="/static/vendors/angular/ngStorage.js"></script>
+	<script src="/static/vendors/angular/angular-sanitize.min.js"></script>
+
+	<!-- my static -->
+	<script src="/app.js"></script>
+	<script src="app/transclusion/TransclusionCtrl.js"></script>
+	<script src="app/transclusion/TransclusionDrv.js"></script>
+	<script src="app/data-driven/DataDrivenCtrl.js"></script>
+	<script src="app/data-driven/DataDrivenDrv.js"></script>
+	<script src="app/execution-order/ExecutionOrderDrv.js"></script>
+	<!--<script src="app/scope/IsolatedScopeDrv.js"></script>-->
+	<!--<script src="app/scope/SharedScopeDrv.js"></script>-->
+	<!--<script src="app/scope/ScopeCtrl.js"></script>-->
+
+</body>
+
+</html>

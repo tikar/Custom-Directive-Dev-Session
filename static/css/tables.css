@@ -1,0 +1,15 @@
+
+/*
+Use CSS ellipsis to truncate the cell contents as needed
+http://stackoverflow.com/questions/22978990/bootstrap-3-table-overflow-out-of-panel
+*/
+
+.table {
+    table-layout:fixed;
+}
+
+.table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
